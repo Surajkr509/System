@@ -25,6 +25,7 @@ public class StudentController {
 	
 	@PostMapping("/add")
 	public String studentSignUp(@RequestBody Student student) {
+		System.out.println("Student Controller");
 		return studentService.save(student);
 	}
 
